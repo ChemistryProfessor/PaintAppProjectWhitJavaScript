@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/Programing 7.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+
+    <div class="container">
+        <section class="tools-board">
+
+            <div>
+                <div class="row">
+                    <div class="titleBox">
+                        <h4 class="title">Shapes</h4>
+                        <span></span>
+                    </div>
+                    <ul class="options">
+                        <li class="option tool" id="rectangle">
+                            <i class="ri-checkbox-blank-line"></i>
+                            <span>Rectangle</span>
+                        </li>
+                        <li class="option tool" id="circle">
+                            <i class="ri-checkbox-blank-circle-line"></i>
+                            <span>Circle</span>
+                        </li>
+                        <li class="option tool" id="triangle">
+                            <i class="ri-triangle-line"></i>
+                            <span>Triangle</span>
+                        </li>
+                        <li class="option tool" id="line">
+                            <i class="ri-edit-line"></i>
+                            <span>Line</span>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" id="fill-color" style="accent-color: #2e4bcc">
+                            <label for="fill-color">Fill Color</label>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="row">
+                    <div class="titleBox">
+                        <h4 class="title">Options</h4>
+                        <span></span>
+                    </div>
+                    <ul class="options">
+                        <li class="option active tool" id="brush">
+                            <i class="ri-brush-line"></i>
+                            <span>Brush</span>
+                        </li>
+                        <li class="option tool" id="eraser">
+                            <i class="ri-eraser-line"></i>
+                            <span>Eraser</span>
+                        </li>
+                        <li class="option">
+                            <input id="size-slider" type="range" min="1" max="30" value="5"/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row colors">
+                <div class="titleBox">
+                    <h4 class="title">Colors</h4>
+                    <span></span>
+                </div>
+                <ul class="options">
+                    <li class="option"></li>
+                    <li class="option selected"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                    <li class="option">
+                        <input type="color" id="color-picker" value="#2e4bcc">
+                    </li>
+                </ul>
+            </div>
+
+
+        </section>
+        <section class="tools-board">
+
+            <div>
+                <div class="titleBox" style="margin-bottom: .5rem;">
+                    <h4 class="title">Services</h4>
+                    <span></span>
+                </div>
+                <div class="row buttons">
+                    <button class="clear-canvas">Clear Canvas</button>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="titleBox" style="margin-bottom: .5rem;display: flex;justify-content: center;align-items: center;">
+                        <h4 class="title">Description</h4>
+                        <span></span>
+                    </div>
+                    <div class="row buttons" style="text-align: justify;">
+                        <span class="description-span">
+                            If you want to use the ability to download photos with a white background, activate this tick at the beginning of the work before making changes
+                        </span>
+                        <div class="bWhiteBox">
+                            <label style="font-size: .9rem;color: white;">White Background</label>
+                            <input type="checkbox" id="checkImgNormal" style="accent-color: #2e4bcc">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="titleBox" style="margin-bottom: .5rem;display: flex;justify-content: center;align-items: center;">
+                        <h4 class="title">Download Links</h4>
+                        <span></span>
+                    </div>
+                    <div class="row buttons">
+                        <button class="save-img" style="opacity: .6;">Save As Image</button>
+                        <button class="save-img-png">Save As Png Image</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="drawing-board">
+            <canvas>
+
+            </canvas>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
